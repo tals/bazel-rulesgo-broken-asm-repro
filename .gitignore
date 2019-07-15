@@ -1,0 +1,9 @@
+.*
+!/.gitignore
+!/.gitattributes
+!/.bazelversion
+# idea
+/*.iml
+# project specific
+/bazel-*
+/hello-go
