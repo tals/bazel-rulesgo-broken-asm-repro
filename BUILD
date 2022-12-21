@@ -13,7 +13,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/eikemeier/hello-go",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_golang_snappy//:go_default_library"],
+    deps = [
+        "@com_github_datadog_zstd//:go_default_library",
+        "@com_github_golang_snappy//:go_default_library",
+    ],
 )
 
 go_binary(

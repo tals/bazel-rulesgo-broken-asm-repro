@@ -56,3 +56,9 @@ go_repository(
     importpath = "github.com/golang/snappy",
     tag = "v0.0.1",
 )
+
+go_repository(
+    name = "com_github_datadog_zstd",
+    importpath = "github.com/DataDog/zstd",
+    tag = "1.x",
+)
