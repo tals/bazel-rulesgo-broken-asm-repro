@@ -52,4 +52,8 @@ go_repository(
     importpath = "github.com/DataDog/zstd",
     sum = "h1:vUG4lAyuPCXO0TLbXvPv7EB7cNK1QV/luu55UHLrrn8=",
     version = "v1.5.2",
+    patch_args= ["-p1"],
+    patches=["//third_party:0001-bazelify.patch"],
+    build_file_generation = "off",
+
 )
